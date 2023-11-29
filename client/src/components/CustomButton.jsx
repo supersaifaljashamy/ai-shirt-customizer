@@ -16,6 +16,7 @@ const CustomButton = ({ type, title, customStyles, handleClick }) => {
     } else if(type === "outline") {
       return {
         borderWidth: '1px',
+        backgroundColor: getContrastingColor(snap.color), 
         borderColor: snap.color,
         color: snap.color
       }
